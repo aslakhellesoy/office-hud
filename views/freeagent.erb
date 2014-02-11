@@ -1,0 +1,7 @@
+<h1>Projects</h1>
+
+<ul>
+<% @projects.each do |project| %>
+  <li><a href="/freeagent/project?url=<%= project['url'] %>"><%= project['name'] %></a></li>
+<% end %>
+<ul>

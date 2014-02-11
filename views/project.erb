@@ -1,0 +1,16 @@
+<h1><%= @project['name'] %></h1>
+
+<table>
+  <tr>
+    <th>Due</th>
+    <th>Net</th>
+    <th>Currency</th>
+  </tr>
+<% @invoices.each do |invoice| %>
+  <tr>
+    <td><%= invoice['due_on'] %></td>
+    <td><%= invoice['net_value'] %></td>
+    <td><%= invoice['currency'] %></td>
+  </tr>
+<% end %>
+<table>
